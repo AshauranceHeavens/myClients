@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['api/*', 'sanctum/csrf-cookie'], // was the first two, api was absent
 
     'allowed_methods' => ['*'],
 
@@ -25,10 +25,10 @@ return [
 
     'allowed_headers' => ['*'],
 
-    'exposed_headers' => [],
+    'exposed_headers' => [], //was []
 
     'max_age' => 0,
 
-    'supports_credentials' => false,
+    'supports_credentials' => true, //was false
 
 ];
